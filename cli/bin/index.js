@@ -46,7 +46,7 @@ async function run() {
     // Note: In production, this should point to the actual published GitHub repository containing the boilerplate.
     // e.g., 'your-username/express-pro-boilerplate'
     // For now, we use a placeholder repo. When you publish this to github, update the string below.
-    const emitter = degit('bikash/express-pro-boilerplate', {
+    const emitter = degit('askbikash/express-pro-boilerplate', {
       cache: false,
       force: true,
       verbose: false,
