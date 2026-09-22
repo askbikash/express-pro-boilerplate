@@ -1,5 +1,5 @@
 {
-  "name": "create-express-pro",
+  "name": "@askbikash/create-express-pro",
   "version": "0.1.0",
   "description": "CLI to scaffold an industry-standard Express.js boilerplate",
   "main": "bin/index.js",

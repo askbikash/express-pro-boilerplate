@@ -12,7 +12,7 @@ beforeAll(async () => {
   } else {
     await sequelize.sync({ force: true });
   }
-});
+}, 30000);
 
 afterAll(async () => {
   if (env.DB_TYPE === 'mongo') {
@@ -21,7 +21,7 @@ afterAll(async () => {
   } else {
     await sequelize.close();
   }
-});
+}, 30000);
 
 describe('Auth Endpoints', () => {
   describe('POST /api/v1/auth/register', () => {
