@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚀 create-express-pro</h1>
+  <h1>🚀 @askbikash/create-express-pro</h1>
   <p><strong>The Ultimate, Production-Ready Express.js CLI Scaffolding Tool</strong></p>
   
   [![npm version](https://img.shields.io/npm/v/@askbikash/create-express-pro.svg?style=flat-square)](https://www.npmjs.com/package/@askbikash/create-express-pro)
@@ -7,55 +7,57 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 </div>
 
-<hr>
+<br>
 
-## 🌟 Why this Boilerplate?
+<div align="center">
+  <b>Tired of setting up Express.js projects from scratch?</b><br>
+  <i>Setting up ESLint, Prettier, Error Handling, Authentication, Docker, and CI/CD pipelines can take hours or even days. This CLI solves that instantly.</i>
+</div>
 
-Tired of setting up Express.js projects from scratch? Setting up ESLint, Prettier, Error Handling, Authentication, Docker, and CI/CD pipelines can take hours or even days. 
+---
 
-**`@askbikash/create-express-pro`** solves this instantly. With a single command, you get a highly scalable, industry-standard Express backend configured with industry best practices, straight out of the box.
+## ⚡ Quick Start
+
+You don't even need to install it globally. Just use `npx` to instantly generate your backend!
+
+```bash
+npx @askbikash/create-express-pro my-awesome-api
+```
+
+### 🎮 Interactive Setup
+The CLI will interactively ask you how you want to configure your project:
+1. **Which Database?** (PostgreSQL via Sequelize or MongoDB via Mongoose)
+2. **Include Authentication?** (Generates pre-built JWT Register/Login endpoints)
+3. **Include Docker setup?** (Generates `docker-compose.yml` for instant local DBs)
+4. **Include GitHub Actions CI?** (Generates automated Testing & Linting pipelines)
+
+Once it finishes, just navigate in and start coding:
+```bash
+cd my-awesome-api
+npm run dev
+```
+
+---
 
 ## ✨ Features out-of-the-box
 
-- **Database Agnostic:** Choose between **PostgreSQL** (Sequelize) or **MongoDB** (Mongoose) during setup.
-- **Robust Authentication:** Built-in JWT-based authentication (Register, Login) with encrypted passwords.
+- **Database Agnostic:** Choose between **PostgreSQL** or **MongoDB** during setup.
+- **Robust Authentication:** Built-in JWT-based authentication with Bcrypt password hashing.
 - **Validation:** Type-safe request validation using **Zod**.
 - **Logging:** High-performance, structured logging via **Pino**.
 - **Centralized Error Handling:** Global error catching with custom `ApiError` classes.
-- **Docker Ready:** Includes `Dockerfile` and `docker-compose.yml` for instant local development.
 - **Testing Setup:** Configured with **Jest** and **Supertest** for integration/unit testing.
 - **CI/CD:** Pre-configured **GitHub Actions** workflows for automated testing and linting.
 - **Code Quality:** **ESLint** and **Prettier** strictly enforced.
 
 ---
 
-## ⚡ Quick Start
-
-You don't even need to install it globally. Just use `npx`!
-
-```bash
-# 1. Scaffold your new project
-npx @askbikash/create-express-pro my-awesome-api
-
-# 2. Navigate to the directory
-cd my-awesome-api
-
-# 3. Start the magic! 
-npm run dev
-```
-
-### Interactive Prompts
-The CLI will interactively ask you:
-1. **Which Database?** (Postgres or MongoDB)
-2. **Include Authentication?** (Yes/No)
-3. **Include Docker setup?** (Yes/No)
-4. **Include GitHub Actions CI?** (Yes/No)
-
----
-
 ## 📂 Project Structure Generated
 
 Your new project will be perfectly modular, feature-first, and highly scalable:
+
+<details>
+<summary><b>Click to expand folder structure</b></summary>
 
 ```text
 ├── .github/workflows/   # CI/CD pipelines
@@ -72,10 +74,12 @@ Your new project will be perfectly modular, feature-first, and highly scalable:
 ├── docker-compose.yml   # Docker compose configuration
 └── package.json
 ```
+</details>
 
 ---
 
 ## 👨‍💻 Created By
 
 **Bikash Kumar** ([askbikash](https://github.com/askbikash))  
+
 If you found this tool helpful in saving your time, please consider giving the [GitHub Repository](https://github.com/askbikash/express-pro-boilerplate) a ⭐️!
