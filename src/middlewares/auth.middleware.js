@@ -23,7 +23,7 @@ export const authenticate = async (req, res, next) => {
 
     req.user = user;
     next();
-  } catch (error) {
+  } catch {
     return next(new ApiError(401, 'Please authenticate'));
   }
 };
