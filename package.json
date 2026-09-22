@@ -1,0 +1,50 @@
+{
+  "name": "express-pro-boilerplate",
+  "version": "1.0.0",
+  "description": "Industry-Standard Express.js Boilerplate",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint src",
+    "format": "prettier --write \"src/**/*.js\"",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "express",
+    "boilerplate"
+  ],
+  "author": "Bikash Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.1",
+    "pg": "^8.23.0",
+    "pg-hstore": "^2.3.4",
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.1.3",
+    "sequelize": "^6.37.8",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "husky": "^9.1.7",
+    "jest": "^30.5.2",
+    "lint-staged": "^16.4.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.8",
+    "sequelize-cli": "^6.6.5",
+    "supertest": "^7.3.0"
+  }
+}
