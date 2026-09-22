@@ -50,8 +50,8 @@ jobs:
       env:
         NODE_ENV: test
         DB_TYPE: ${{ matrix.db-type }}
-        MONGO_URI: mongodb://localhost:27017/express_pro_test
-        DB_HOST: localhost
+        MONGO_URI: mongodb://127.0.0.1:27017/express_pro_test
+        DB_HOST: 127.0.0.1
         DB_PORT: 5432
         DB_USER: postgres
         DB_PASSWORD: postgres

@@ -13,9 +13,9 @@ services:
       - DB_HOST=db
       - DB_PORT=5432
       - DB_USER=postgres
-      - DB_PASSWORD=postgres
+      - DB_PASSWORD=${DB_PASSWORD:-local_dev_password_only}
       - DB_NAME=express_pro
-      - JWT_SECRET=supersecretjwtkeythatislongenough
+      - JWT_SECRET=${JWT_SECRET:-local_dev_jwt_secret_only}
       - JWT_EXPIRES_IN=1d
     depends_on:
       - db
